@@ -41,177 +41,202 @@ function selectOption(option) {
 
 const textNodes = [
 {
-    id:1, 
+    id:1, //Game start!
     text: "What mode would you like?",
     options: [
     {
       text: "Game",
-      nextText: 2
+      nextText: 3
     },
     {
       text: "Text",
-      nextText: 13
+      nextText: 2
     }
     ]
 },
-  {
-    id: 2,
+{
+    id: 2,  //Text
+    text: "You wake up under a canopy. Getting up, you find yourself standing in the president's garden among the grass. Looking at the leaves, you can see light filtering through the tree by the warm afternoon sun.",
+    options: [
+    {
+      text: 'Restart',
+      nextText: -1
+    }
+    ]
+},
+{
+    id: 3,  //Beginning
     text: 'You wake up under a canopy. What would you like to do?',
     options: [
       {
         text: 'Get up',
-        nextText: 3
+        nextText: 5
       },
       {
         text: 'Look at the leaves',
-        nextText: 12
+        nextText: 4
       }
     ]
-  }
+}
   ,{
-    id: 3,
+    id: 4,  //Observation of beginning
+    text: 'Looking at the leaves, you can see light filtering through the tree by the warm afternoon sun. It looks like the end of summer, and the green leaves are beginning to turn brown.',
+    options: [
+      {
+        text: 'Go back',
+        nextText: 3
+      },
+    ]
+  },
+  {
+    id: 5,  //President's garden
     text: "You find yourself in the President's garden in UCC, among the various plants that reside there.",
     options: [
       {
+        text: 'Look around',
+        nextText: 6
+      },
+      {
         text: 'Head to the Hub',
-        nextText: 4
-      },
-      {
-        text: 'Check what classes you have',
-        nextText: 5
-      },
-      {
-        text: 'Go home',
-        nextText: 6
-      }
-    ]
-  },
-  {
-    id: 4,
-    text: 'The Hub is bustling with activity. ',
-    options: [
-      {
-        text: 'Explore the castle',
-        nextText: 4
-      },
-      {
-        text: 'Find a room to sleep at in the town',
-        nextText: 5
-      },
-      {
-        text: 'Find some hay in a stable to sleep in',
-        nextText: 6
-      }
-    ]
-  },
-  {
-    id: 5,
-    text: 'You see that there is a class about to start',
-    options: [
-      {
-        text: 'Go to class',
         nextText: 7
-      }
-      ,{
-        text: "Skip class",
+      },
+      {
+        text: 'Head to the Student Centre',
         nextText: 8
+      },
+      {
+        text: 'Head to the Boole Library',
+        nextText: 9
+      },
+      {
+        text: 'Head to the Kane building',
+        nextText: 10
       }
     ]
   },
   {
-    id: 6,
-    text: 'You go home and have a nice nap.',
+    id: 6,  //Observing Pres' garden
+    text: "The President's garden is still full of colour, even after hints of the autumn season appear, and the windy and rainy weather that accompanies late summer in Ireland.",
     options: [
       {
-        text: 'Restart',
-        nextText: -1
+        text: 'Go back',
+        nextText: 5
+      },
+    ]
+  },
+  {
+    id: 7,  //The Hub
+    text: 'The hub is bustling with activity as always. People walk past, going to classes and meeting with friends.',
+    options: [
+      {
+        text: 'Go to the Clubs and Societies Hub',
+        nextText: 11
+      },
+      {
+        text: "Walk up to the Global Lounge",
+        nextText: 12
+      },
+      {
+        text: "Watch the people passing by",
+        nextText: 13
       }
     ]
   },
   {
-    id: 7,
+    id: 8,  //Student Centre
+    text: "Arriving at the Student Centre, the cafe is open, and there's commotion upstairs, from the new bar, and an event in Devere Hall.",
+    options: [
+      {
+        text: 'Wait in line at the cafe',
+        nextText: 14
+      },
+      {
+        text: "Go upstairs",
+        nextText: 15
+      },
+      {
+        text: "Go back outside",
+        nextText: 5
+      }
+    ]
+  },
+  {
+    id: 9,  //Boole Library
     text: 'You go to class and get educated.',
     options: [
       {
         text: 'Go to the Hub',
-        nextText: 4
+        nextText: 16
       }
     ]
   },
   {
-    id: 7,
-    text: 'While exploring the castle you come across a horrible monster in your path.',
+    id: 10, //Kane Building
+    text: '',
     options: [
       {
-        text: 'Try to run',
-        nextText: 8
+        text: '',
+        nextText: 17
       },
       {
-        text: 'Attack it with your sword',
-        requiredState: (currentState) => currentState.sword,
-        nextText: 9
+        text: '',
+        nextText: 18
       },
       {
-        text: 'Hide behind your shield',
-        requiredState: (currentState) => currentState.shield,
-        nextText: 10
+        text: '',
+        nextText: 19
       },
       {
-        text: 'Throw the blue goo at it',
-        requiredState: (currentState) => currentState.blueGoo,
-        nextText: 11
-      }
-    ]
-  },
-  {
-    id: 8,
-    text: 'Your attempts to run are in vain and the monster easily catches.',
-    options: [
-      {
-        text: 'Restart',
-        nextText: -1
-      }
-    ]
-  },
-  {
-    id: 9,
-    text: 'You foolishly thought this monster could be slain with a single sword.',
-    options: [
-      {
-        text: 'Restart',
-        nextText: -1
-      }
-    ]
-  },
-  {
-    id: 10,
-    text: 'The monster laughed as you hid behind your shield and ate you.',
-    options: [
-      {
-        text: 'Restart',
-        nextText: -1
+        text: '',
+        nextText: 20
       }
     ]
   },
   {
     id: 11,
-    text: 'You threw your jar of goo at the monster and it exploded. After the dust settled you saw the monster was destroyed. Seeing your victory you decide to claim this castle as your and live out the rest of your days there.',
+    text: '',
     options: [
       {
-        text: 'Congratulations. Play Again.',
+        text: 'Restart',
+        nextText: -1
+      }
+    ]
+  },
+  {
+    id: 12,
+    text: '',
+    options: [
+      {
+        text: 'Restart',
+        nextText: -1
+      }
+    ]
+  },
+  {
+    id: 13,
+    text: '',
+    options: [
+      {
+        text: 'Restart',
+        nextText: -1
+      }
+    ]
+  },
+  {
+    id: 14,
+    text: '',
+    options: [
+      {
+        text: '',
         nextText: -1
       }
     ]
   }
   ,{
-    id:12,
-    text: 'Looking at the leaves, you can see light filtering through the tree by the warm afternoon sun. It looks like the end of summer, and the green leaves are beginning to turn brown.',
-    nextText: -1
+    id:15,
+
   }
-  ,{
-    id: 13,
-    text: "You wake up under a canopy. Getting up, you find yourself standing in the president's garden among the grass. Looking at the leaves, you can see light filtering through the tree by the warm afternoon sun."
-  }
+  ,
 ]
 
 startGame()
