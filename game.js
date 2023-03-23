@@ -567,7 +567,369 @@ const textNodes = [
       },
       {
         text: "Leave a reply",
-        // window.open('http://www.google.com','_blank')
+        nextText: 64,
+      },
+      ]
+  },
+  {
+    id: 34, //Cafe look
+    text: "Sandwiches, wraps and pastries sit in fridges and on counters, waiting to be picked up. A line is present along the side of the cafe, leading to a till where people are purchasing their food.",
+    options: [
+      {
+        text: "Go back",
+        nextText:14,
+      },
+      ]
+  },
+  {
+    id: 35, //Go to new bar
+    text: "Club Áras serves as a meeting place for an uncountable number of students, serving hot food and cold drinks until late weekdays.",
+    options: [
+      {
+      text: "Sit down at a table",
+      nextText: 52,
+      },
+      {
+      text: "Go to the bar",
+      nextText: 53,
+      },
+      {
+      text: "Leave the New Bar",
+      nextText: 15,
+      },
+      {
+      text: "Look around",
+      nextText: 54,
+      },
+    ]
+  },
+  {
+    id: 36, //Go to devere hall
+    text: "Devere Hall is a large common room designed for a large number of uses. One of those uses is hosting a town hall event for the UCC Co-Op society, which is currently taking place.",
+    options: [
+      {
+      text: "Attend the Co-Op Society event",
+      nextText: 55,
+      },
+      {
+      text: "Look around at the hall",
+      nextText: 56,
+      },
+      {
+      text: "Leave Devere Hall",
+      nextText: 15,
+      },
+    ]
+  },
+  {
+    id: 37, //Upstairs look
+    text: "The Student centre features truly massive windows, which allow students on the second floor to see far from the building.",
+    options: [
+      {
+      text: "Cool",
+      nextText: 15,
+      },
+    ]
+  },
+  {
+    id: 38, //Boole f1 look
+    text: "Boole library, named after the mathematician, philosopher and logician George Boole, is home to UCC's largest store of information.",
+    options: [
+      {
+      text: "Nice",
+      nextText: 17,
+      },
+    ]
+  },
+  {
+    id: 39, //Boole f1 take book
+    text: "You check out a book for one of your classes.",
+    options: [
+      {
+      text: "Neat",
+      nextText: 17,
+      },
+      ]
+  },
+  {
+    id: 40, //Boole f2 look
+    text: "The main building of Boole Library was built in 1983, after having been dubbed The Boole Library a year before.",
+    options: [
+      {
+      text: "Interesting",
+      nextText: 20,
+      },
+      ]
+  },
+  {
+    id: 41, //Boole f2 take book
+    text: "You take a book that looks interesting",
+    options: [
+      {
+      text: "Perfect",
+      nextText: 20,
+      },
+      ]
+  },
+  {
+    id: 42, //Boole f3 look
+    text: "The Post-Graduate Research Library of Boole Library was built in 2008 to assist students in further study.",
+    options: [
+      {
+      text: "Fascinating",
+      nextText: 21,
+      },
+      ]
+  },
+  {
+    id: 43, //Boole f3 take book
+    text: "You retrieve a book that you have been interested in reading and check it out.",
+    options: [
+      {
+      text: "Awesome",
+      nextText: 21,
+      },
+      ]
+  },
+  {
+    id: 44, //Kane building science
+    text: "You do science so good that they say you never need to do science ever again. You are escorted out of the lab. Congratulations! You got the Science Ending. You can play again or leave a reply to let me know what you thought.",
+    options: [
+      {
+      text: "Restart",
+      nextText: -1,
+      },
+      {
+      text: "Leave a reply",
+      nextText: 64,
+      },
+      ]
+  },
+  {
+    id: 45, //Kane building lab look
+    text: "The Kane building was originally called the science building, and was only renamed in 1997 after the first president of Queen's College Cork, Sir Robert Kane.",
+    options: [
+      {
+      text: "Hats off to you rob",
+      nextText: 10,
+      },
+      ]
+  },
+  {
+    id: 46, //Kane lockers open
+    text: "You open your locker and see your spare change of clothes for exercise.",
+    options: [
+      {
+      text: "Change clothes",
+      nextText: 57,
+      },
+      {
+      text: "Close your locker",
+      nextText: 24,
+      },
+      ]
+  },
+  {
+    id: 47, //Kane building lockers look
+    text: "The lockers are a secure place to store things that you cannot easily carry with you from day to day. A locker must be obtained by applying online.",
+    options: [
+      {
+      text: "Understandable",
+      nextText: 24,
+      },
+      ]
+  },
+  {
+    id: 48, //s&c events: dodgeball
+    text: "The dodgeball tournament is tough, but you're tougher. There were highs and there were lows, to the point where you thought you would be beaten. The teams were assigned randomly, but by the end, you lead your team to victory and earned their trust and made lifetime friends.",
+    options: [
+      {
+      text: "Hooray",
+      nextText: 58,
+      },
+      ]
+  },
+  {
+    id: 49, //s&c events: scifi
+    text: "A huge crowd gathers outside of Boole 6 to watch the scifi screening of Rick and Morty. You remembered to bring your reusable cup and enjoy free tea before the event starts.",
+    options: [
+      {
+      text: "I tried to put the rick and morty copy-paste here, but it filled the screen",
+      nextText: 59,
+      },
+      ]
+  },
+  {
+    id: 50, //Hub lounge work
+    text: "You put your headphones on and finish your next assignment.",
+    options: [
+      {
+      text: "Watch the confetti on canvas",
+      nextText: 60,
+      },
+      ]
+  },
+  {
+    id: 51, //Hub lounge read
+    text: "You take the time to read one of the books you have with you.",
+    options: [
+      {
+      text: "Turn the pages",
+      nextText: 60,
+      },
+      ]
+  },
+  {
+    id: 52, //New bar sit
+    text: "You sit down in one of the booths of the new bar, and pass some time chatting to friends and eating good food.",
+    options: [
+      {
+      text: "Order some drinks",
+      nextText: 61,
+      },
+      ]
+  },
+  {
+    id: 53, //New bar go to bar
+    text: "You approach a bartender and order one of your favourite drinks: a strawberry daiquiri.",
+    options: [
+      {
+      text: "Delicious",
+      nextText: 61,
+      },
+      ]
+  },
+  {
+    id: 54, //New bar look
+    text: "The New Bar, along with the Nom Nom Bistro, serve as a licensed bar inside the UCC premises. It is named the New Bar after the Old Bar was converted into a quiet space for students with autism to rest in, called the Quiet Zone.",
+    options: [
+      {
+      text: "Cool",
+      nextText: 35,
+      },
+      ]
+  },
+  {
+    id: 55, //Devere hall attend event
+    text: "Joining the town hall, several topics are presented. Each topic is addressed and each person who wants to speak on that topic is given the time to. You speak once when the topic moves to the student housing Co-Op. As the town hall concludes, you find a renewed sense of community",
+    options: [
+      {
+      text: "Awesome",
+      nextText: 62,
+      },
+      ]
+  },
+  {
+    id: 56, //Devere hall look
+    text: "Looking through the wide double doors, you see a high roof and a huge expanse of floor, taken up partially with collapsable tables and chairs. The modularity of the hall serves it well, and its use in events and conventions make it one of the most popular venues.",
+    options: [
+      {
+      text: "Ooh",
+      nextText: 36,
+      },
+      ]
+  },
+  {
+    id: 57, //Locker clothes
+    text: "Taking out your spare change of clothes, you change into a tracksuit for exercise.",
+    options: [
+      {
+      text: "We go gym",
+      nextText: 63,
+      },
+      ]
+  },
+  {
+    id: 58, //Dodgeball ending
+    text: "Having become the champion of the UCC Dodgeball club, you are famed for the rest of your time in UCC and are remembered in the annals of history. Congratulations! You got the Dodgeball ending. You can play again, or leave a reply to let me know what you think.",
+    options: [
+      {
+      text: "Restart",
+      nextText: -1,
+      },
+      {
+        text: "Leave a reply",
+        nextText: 64,
+      },
+      ]
+  },
+  {
+    id: 59, //scifi ending
+    text: "After laughing yourself to tears, the screening ends, and you leave the lecture theatre. Congratulations! You got the Sci-Fi ending. You can play again or leave a reply to let me know what you think.",
+    options: [
+      {
+      text: "Restart",
+      nextText: -1,
+      },
+      {
+        text: "Leave a reply",
+        nextText: 64,
+      },
+      ]
+  },
+  {
+    id: 60, //Hub ending
+    text: "After a while, you look up and see that the sky has gone dark. You pack your things and leave the hub, happy with the work you did there.",
+    options: [
+      {
+      text: "Restart",
+      nextText: -1,
+      },
+      {
+        text: "Leave a reply",
+        nextText: 64,
+      },
+      ]
+  },
+  {
+    id: 61, //New bar ending
+    text: "As the hours pass, it's time for you to head home. You fall into your bed and have a good night's rest, not knowing the headache you'll have the next morning. Congratulations! You got the New Bar Ending. You can play again or leave a reply and let me know what you think.",
+    options: [
+      {
+      text: "Restart",
+      nextText: -1,
+      },
+      {
+        text: "Leave a reply",
+        nextText: 64,
+      },
+      ]
+  },
+  {
+    id: 62, //Devere hall ending
+    text: "Congratulations! You got the Co-Op ending. You can play again or leave a reply to let me know what you thought.",
+    options: [
+      {
+      text: "Restart",
+      nextText: -1,
+      },
+      {
+        text: "Leave a reply",
+        nextText: 64,
+      },
+      ]
+  },
+  {
+    id: 63, //Locker ending
+    text: "It's an eight minute walk to the Mardyke Arena, where you pump iron and run on the treadmill all day. Congratulations! You got the Gym ending. You can play again or leave a reply and let me know what you thought.",
+    options: [
+      {
+      text: "Restart",
+      nextText: -1,
+      },
+      {
+        text: "Leave a reply",
+        nextText: 64,
+      },
+      ]
+  },
+  {
+    id: 64, //Leave a reply
+    text: "Thanks for sending feedback. You can go to  to leave a message. Have a good day!",
+    options: [
+      {
+      text: "Restart",
+      nextText: -1,
       },
       ]
   },
