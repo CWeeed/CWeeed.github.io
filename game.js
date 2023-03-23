@@ -321,7 +321,12 @@ const textNodes = [
   {
     id: 16, // Student Centre observation
     text: "Áras na Mac Léinn is a building at the heart of the campus, providing vital services to the students of UCC. You can get something to eat, check your balance at the Bank of Ireland UCC branch, get some UCC merch or get a drink at the new bar",
-    nextText: 8
+    options: [
+      {
+      text: "Go back",
+      nextText: 8,
+      },
+      ]
   },
   {
     id: 17, //Boole Library Floor 1 - Science, Engineering & Food Science
@@ -374,7 +379,12 @@ const textNodes = [
   {
     id: 19, //Boole library look
     text: "The Boole Library is one of the most central parts of the college, a huge labyrinth of study spaces and learning. Among the services here are printing, book loans, bookable study spaces, production studios, computers and UCC's very own nap pod!",
-    nextText: 9
+    options: [
+      {
+      text: "Go back",
+      nextText: 9,
+      },
+      ]
   },
   {
     id: 20, //Boole library Floor 2 - Business, Social Sciences, Law
@@ -427,7 +437,12 @@ const textNodes = [
   {
     id: 22, //Kane building Observation
     text: "Long corridors stretch out in front of you, with parallel doors on either side opening into laboratories full of esteemed scientists and students.",
-    nextText: 10
+    options: [
+      {
+      text: "Go back",
+      nextText: 10,
+      },
+      ]
   },
   {
     id: 23, //Labs
@@ -504,7 +519,12 @@ const textNodes = [
   {
     id: 27, //Clubs and socs look
     text: "The clubs and societies hub is the nexus of the best of what college represents. People from every club and society in every position moves about with purpose and bright outlooks.",
-    nextText: 11
+    options: [
+      {
+      text: "Go back",
+      nextText: 11,
+      },
+      ]
   },
   {
     id: 28, //Look at events
@@ -545,17 +565,32 @@ const textNodes = [
   {
     id: 30, //Global lounge look
     text: "The Global lounge is a place to relax between classes or even on its own.",
-    nextText: 12
+    options: [
+      {
+      text: "Go back",
+      nextText: 12,
+      },
+      ]
   },
   {
     id: 31, //Get food
     text: "You pick up a tasty looking sandwich",
-    nextText: 14
+    options: [
+      {
+      text: "Yum",
+      nextText: 14,
+      },
+      ]
   },
   {
     id: 32, //Get drink
     text: "You grab a nice drink",
-    nextText: 14
+    options: [
+      {
+      text: "Yum",
+      nextText: 14,
+      },
+      ]
   },
   {
     id: 33, //purchase
