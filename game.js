@@ -181,7 +181,7 @@ const textNodes = [
         nextText: 18
       },
       {
-        text: "Look around",
+        text: "Learn about The Boole Library",
         nextText: 19
       },
       {
@@ -345,7 +345,7 @@ const textNodes = [
         nextText: 18
       },
       {
-        text: "Look around",
+        text: "Learn about the History of the Boole",
         nextText: 38
       },
       {
@@ -403,7 +403,7 @@ const textNodes = [
         nextText: 18
       },
       {
-        text: "Look around",
+        text: "Learn more about the library",
         nextText: 40
       },
       {
