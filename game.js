@@ -66,15 +66,15 @@ const textNodes = [
 },
 {
     id: 3,  //Beginning
-    text: 'You wake up under a canopy. What would you like to do?',
+    text: 'Welcome to \'A walk around UCC\', a small game that lets you explore around the main campus of University College Cork and learn about the college and its history.\nYou wake up, and find yourself staring up at a tree\'s branches.',
     options: [
       {
         text: 'Get up',
         nextText: 5
       },
       {
-        text: 'Look at the leaves',
-        nextText: 4
+        text: 'Exit',
+        nextText: 0
       }
     ]
 }
@@ -116,7 +116,7 @@ const textNodes = [
   },
   {
     id: 6,  //Observing Pres' garden
-    text: "The President's garden is still full of colour, even after hints of the autumn season appear, and the windy and rainy weather that accompanies late summer in Ireland.",
+    text: "The President's garden is a beautiful arrangement of flowers, trees and grassland situated next to The Quad in UCC's main campus. The garden was closed by high walls, only allowing use by the president until the 1960's. Now, it's an open space for anyone to enjoy.",
     options: [
       {
         text: 'Go back',
@@ -181,7 +181,7 @@ const textNodes = [
         nextText: 18
       },
       {
-        text: "Learn about The Boole Library",
+        text: "Look around",
         nextText: 19
       },
       {
@@ -262,7 +262,7 @@ const textNodes = [
   },
   {
     id: 13, //Hub description
-    text: 'The Hub is a multi-purpose building, designed to be used for academic, extra-curricular, and social activities. There are classrooms, lecture theatres, seated areas and the Clubs and Societies Hub is also located here.',
+    text: 'The Hub is a new multi-purpose building, designed to be used for academic, extra-curricular, and social activities. There are classrooms, lecture theatres, seated areas and the Clubs and Societies Hub is also located here.',
     options: [
       {
         text: 'Go back',
@@ -345,7 +345,7 @@ const textNodes = [
         nextText: 18
       },
       {
-        text: "Learn about the History of the Boole",
+        text: "Look around",
         nextText: 38
       },
       {
@@ -403,7 +403,7 @@ const textNodes = [
         nextText: 18
       },
       {
-        text: "Learn more about the library",
+        text: "Learn about the Boole Library",
         nextText: 40
       },
       {
@@ -425,7 +425,7 @@ const textNodes = [
         nextText: 18
       },
       {
-        text: "Take a look around",
+        text: "Learn about the Boole Library",
         nextText: 42
       },
       {
@@ -436,7 +436,7 @@ const textNodes = [
   },
   {
     id: 22, //Kane building Observation
-    text: "Long corridors stretch out in front of you, with parallel doors on either side opening into laboratories full of esteemed scientists and students.",
+    text: "",
     options: [
       {
       text: "Go back",
