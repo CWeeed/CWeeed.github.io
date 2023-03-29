@@ -56,7 +56,7 @@ const textNodes = [
 },
 {
     id: 2,  //Text
-    text: "You wake up under a canopy. Getting up, you find yourself standing in the president's garden among the grass. Looking at the leaves, you can see light filtering through the tree by the warm afternoon sun.",
+    text: "You wake up under a canopy. Getting up, you find yourself standing in the president's garden among the grass. Looking at the leaves, you can see light filtering through the tree by the warm afternoon sun. The President's garden is a beautiful arrangement of flowers, trees and grassland situated next to The Quad in UCC's main campus. The garden was closed by high walls, only allowing use by the president until the 1960's. Now, it's an open space for anyone to enjoy. You head to the hub. The Hub is bustling with activity as always. People walk past, going to classes and meeting with friends. The clubs and societies hub is the nexus of the best of what college represents. People from every club and society in every position moves about with purpose and bright outlooks. Heading out, you go to the Boole Library next. The Boole Library is much quieter once you enter, having many students working on assignments. The Boole Library is one of the most central parts of the college, a huge labyrinth of study spaces and learning. Among the services here are printing, book loans, bookable study spaces, production studios, computers and UCC's very own nap pod! Going up the stairs, you pass each floor; Boole Library - Floor 1. This floor holds the information related to science, engineering and food science. Come here to look for academic texts on the fields of science. Boole Library - Floor 2. This floor covers business, social sciences and law. Grab a book here to learn about the different aspects of society. Boole Library - Floor 3. This floor is home to the arts, humanities and multi-media information. Come here to study about the beautiful parts of life. You retrieve a book that you have been interested in reading and check it out. Heading out, you feel hungry, so you walk towards the student centre. Arriving at the Student Centre, the cafe is open, and there's commotion upstairs, from the new bar, and an event in Devere Hall. Áras na Mac Léinn is a building at the heart of the campus, providing vital services to the students of UCC. You can get something to eat, check your balance at the Bank of Ireland UCC branch, get some UCC merch or get a drink at the new bar. At the café, there's always food available to snack on during the day at a good price. Upstairs, there's music playing at the new bar at all hours, and a Co-Op Society Town hall is starting in Devere Hall.Devere Hall is a large common room designed for a large number of uses. One of those uses is hosting a town hall event for the UCC Co-Op society, which is currently taking place. The new bar, titled 'Club Áras', serves as a meeting place for an uncountable number of students, serving hot food and cold drinks until late weekdays. Deciding against either option, you leave the student centre and go to the Kane building. Standing in front of the main reception, you see several hallways leading away from you to far corners of the huge building. The Kane building, previously called the science building, is full of labs, equipment and esteemed scientists.",
     options: [
     {
       text: 'Restart',
@@ -116,7 +116,7 @@ const textNodes = [
   },
   {
     id: 6,  //Observing Pres' garden
-    text: "The President's garden is a beautiful arrangement of flowers, trees and grassland situated next to The Quad in UCC's main campus. The garden was closed by high walls, only allowing use by the president until the 1960's. Now, it's an open space for anyone to enjoy.",
+    text: "The President's garden is a beautiful arrangement of flowers, trees and grassland situated next to The Quad in UCC's main campus. The garden was closed by high walls, only allowing use by the president until the 1960's. Now, it's an open space for anyone to enjoy. The Hub is a new multi-purpose building, designed to be used for academic, extra-curricular, and social activities. There are classrooms, lecture theatres, seated areas and the Clubs and Societies Hub is also located here. The Clubs and Societies Hub is kept busy by the endless movement of staff and committee members. The Global lounge is a place of relaxation and concentration, offering comfortable seats to get work done or chat with friends.",
     options: [
       {
         text: 'Go back',
@@ -436,7 +436,7 @@ const textNodes = [
   },
   {
     id: 22, //Kane building Observation
-    text: "",
+    text: "The Kane building, previously called the science building, is full of labs, equipment and esteemed scientists.",
     options: [
       {
       text: "Go back",
