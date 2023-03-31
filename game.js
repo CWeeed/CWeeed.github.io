@@ -56,7 +56,7 @@ const textNodes = [
 },
 {
     id: 2,  //Text
-    text: "You wake up under a canopy. Getting up, you find yourself standing in the president's garden among the grass. Looking at the leaves, you can see light filtering through the tree by the warm afternoon sun. The President's garden is a beautiful arrangement of flowers, trees and grassland situated next to The Quad in UCC's main campus. The garden was closed by high walls, only allowing use by the president until the 1960's. Now, it's an open space for anyone to enjoy. You head to the hub. The Hub is bustling with activity as always. People walk past, going to classes and meeting with friends. The clubs and societies hub is the nexus of the best of what college represents. People from every club and society in every position moves about with purpose and bright outlooks. Heading out, you go to the Boole Library next. The Boole Library is much quieter once you enter, having many students working on assignments. The Boole Library is one of the most central parts of the college, a huge labyrinth of study spaces and learning. Among the services here are printing, book loans, bookable study spaces, production studios, computers and UCC's very own nap pod! Going up the stairs, you pass each floor; Boole Library - Floor 1. This floor holds the information related to science, engineering and food science. Come here to look for academic texts on the fields of science. Boole Library - Floor 2. This floor covers business, social sciences and law. Grab a book here to learn about the different aspects of society. Boole Library - Floor 3. This floor is home to the arts, humanities and multi-media information. Come here to study about the beautiful parts of life. You retrieve a book that you have been interested in reading and check it out. Heading out, you feel hungry, so you walk towards the student centre. Arriving at the Student Centre, the cafe is open, and there's commotion upstairs, from the new bar, and an event in Devere Hall. Áras na Mac Léinn is a building at the heart of the campus, providing vital services to the students of UCC. You can get something to eat, check your balance at the Bank of Ireland UCC branch, get some UCC merch or get a drink at the new bar. At the café, there's always food available to snack on during the day at a good price. Upstairs, there's music playing at the new bar at all hours, and a Co-Op Society Town hall is starting in Devere Hall.Devere Hall is a large common room designed for a large number of uses. One of those uses is hosting a town hall event for the UCC Co-Op society, which is currently taking place. The new bar, titled 'Club Áras', serves as a meeting place for an uncountable number of students, serving hot food and cold drinks until late weekdays. Deciding against either option, you leave the student centre and go to the Kane building. Standing in front of the main reception, you see several hallways leading away from you to far corners of the huge building. The Kane building, previously called the science building, is full of labs, equipment and esteemed scientists.",
+    text: "You wake up under a canopy. Getting up, you find yourself standing in the president's garden among the grass. Looking at the leaves, you can see light filtering through the tree by the warm afternoon sun. The President's garden is a beautiful arrangement of flowers, trees and grassland situated next to The Quad in UCC's main campus. The garden was closed by high walls, only allowing use by the president until the 1960's. Now, it's an open space for anyone to enjoy. You head to the hub. The Hub is bustling with activity as always. People walk past, going to classes and meeting with friends. The clubs and societies hub is the nexus of the best of what college represents. People from every club and society in every position moves about with purpose and bright outlooks. Heading out, you go to the Boole Library next. The Boole Library is much quieter once you enter, having many students working on assignments. The Boole Library is one of the most central parts of the college, a huge labyrinth of study spaces and learning. Among the services here are printing, book loans, bookable study spaces, production studios, computers and UCC's very own nap pod! Going up the stairs, you pass each floor; Boole Library - Floor 1. This floor holds the information related to science, engineering and food science. Come here to look for academic texts on the fields of science. Boole Library - Floor 2. This floor covers business, social sciences and law. Grab a book here to learn about the different aspects of society. Boole Library - Floor 3. This floor is home to the arts, humanities and multi-media information. Come here to study about the beautiful parts of life. You retrieve a book that you have been interested in reading and check it out. Heading out, you feel hungry, so you walk towards the student centre. Arriving at the Student Centre, the cafe is open, and there's commotion upstairs, from the new bar, and an event in Devere Hall. Áras na Mac Léinn is a building at the heart of the campus, providing vital services to the students of UCC. You can get something to eat, check your balance at the Bank of Ireland UCC branch, get some UCC merch or get a drink at the new bar. At the café, there's always food available to snack on during the day at a good price. Upstairs, there's music playing at the new bar at all hours, and a Co-Op Society Town Hall is starting in Devere Hall.Devere Hall is a large common room designed for a large number of uses. One of those uses is hosting a town Hall event for the UCC Co-Op society, which is currently taking place. The new bar, titled 'Club Áras', serves as a meeting place for an uncountable number of students, serving hot food and cold drinks until late weekdays. Deciding against either option, you leave the student centre and go to the Kane building. Standing in front of the main reception, you see several hallways leading away from you to far corners of the huge building. The Kane building, previously called the science building, is full of labs, equipment and esteemed scientists.",
     options: [
     {
       text: 'Restart',
@@ -116,7 +116,7 @@ const textNodes = [
   },
   {
     id: 6,  //Observing Pres' garden
-    text: "The President's garden is a beautiful arrangement of flowers, trees and grassland situated next to The Quad in UCC's main campus. The garden was closed by high walls, only allowing use by the president until the 1960's. Now, it's an open space for anyone to enjoy. The Hub is a new multi-purpose building, designed to be used for academic, extra-curricular, and social activities. There are classrooms, lecture theatres, seated areas and the Clubs and Societies Hub is also located here. The Clubs and Societies Hub is kept busy by the endless movement of staff and committee members. The Global lounge is a place of relaxation and concentration, offering comfortable seats to get work done or chat with friends.",
+    text: "The President's garden is a beautiful arrangement of flowers, trees and grassland situated next to The Quad in UCC's main campus. The garden was closed by high walls, only allowing use by the president until the 1960's. Now, it's an open space for anyone to enjoy.",
     options: [
       {
         text: 'Go back',
@@ -276,14 +276,17 @@ const textNodes = [
     options: [
       {
         text: 'Get some food',
-        nextText: 31
+        setState: { food: true },
+        nextText: 31,
       },
       {
         text: "Get a drink",
-        nextText: 32
+        setState: {food: true},
+        nextText: 32,
       },
       {
         text: "Go to the till",
+        requiredState: (currentState) => currentState.food,
         nextText: 33
       },
       {
@@ -298,14 +301,14 @@ const textNodes = [
   }
   ,{
     id:15, //Upstairs
-    text: "Upstairs, there's music playing at the new bar at all hours, and a Co-Op Society Town hall is starting in Devere Hall",
+    text: "Upstairs, there's music playing at the new bar at all hours, and a Co-Op Society Town Hall is starting in Devere Hall",
     options: [
       {
         text: "Go to the new bar",
         nextText: 35
       },
       {
-        text: "Go to the town hall",
+        text: "Go to the Town Hall",
         nextText: 36
       },
       {
@@ -350,7 +353,8 @@ const textNodes = [
       },
       {
         text: "Take a book",
-        nextText: 39
+        setState: { booleBook: true},
+        nextText: 39,
       },
       ]
   },
@@ -408,6 +412,7 @@ const textNodes = [
       },
       {
         text: "Take a book",
+        setState: {booleBook: true},
         nextText: 41
       },
       ]
@@ -430,6 +435,7 @@ const textNodes = [
       },
       {
         text: "Take a book out",
+        setState: {booleBook: true},
         nextText: 43
       },
       ]
@@ -554,6 +560,7 @@ const textNodes = [
       },
       {
         text: "Read a book",
+        requiredState: (currentState) => currentState.booleBook,
         nextText: 51
       },
       {
@@ -640,14 +647,14 @@ const textNodes = [
   },
   {
     id: 36, //Go to devere hall
-    text: "Devere Hall is a large common room designed for a large number of uses. One of those uses is hosting a town hall event for the UCC Co-Op society, which is currently taking place.",
+    text: "Devere Hall is a large common room designed for a large number of uses. One of those uses is hosting a Town Hall event for the UCC Co-Op society, which is currently taking place.",
     options: [
       {
       text: "Attend the Co-Op Society event",
       nextText: 55,
       },
       {
-      text: "Look around at the hall",
+      text: "Look around at the Hall",
       nextText: 56,
       },
       {
@@ -810,7 +817,7 @@ const textNodes = [
     options: [
       {
       text: "Turn the pages",
-      nextText: 60,
+      nextText: 66,
       },
       ]
   },
@@ -846,7 +853,7 @@ const textNodes = [
   },
   {
     id: 55, //Devere hall attend event
-    text: "Joining the town hall, several topics are presented. Each topic is addressed and each person who wants to speak on that topic is given the time to. You speak once when the topic moves to the student housing Co-Op. As the town hall concludes, you find a renewed sense of community",
+    text: "Joining the Town Hall, several topics are presented. Each topic is addressed and each person who wants to speak on that topic is given the time to. You speak once when the topic moves to the student housing Co-Op. As the Town Hall concludes, you find a renewed sense of community",
     options: [
       {
       text: "Awesome",
@@ -960,7 +967,7 @@ const textNodes = [
   },
   {
     id: 64, //Leave a reply
-    text: "Thanks for sending feedback. You can go to  to leave a message. Have a good day!",
+    text: "Thanks for sending feedback. You can go to t-h-e-reef.org/dhgame to leave a message. Have a good day!",
     options: [
       {
       text: "Restart",
@@ -968,6 +975,20 @@ const textNodes = [
       },
       ]
   },
+  {
+    id: 65, //Join club/soc
+    text: "Congratulations, you're a member! You'll be updated on all the newest events, and can enjoy everything ucc has to offer!",
+    options: [
+    {
+      text: "Hooray!",
+      nextText: 11,
+    },
+    {
+      id: 66, //Secret ending
+      text: "You got the secret ending, congratulations! You can play again, or leave a reply to let me know what you thought.\nThanks for playing!"
+    }
+    ]
+  }
   ]
 
 startGame()
