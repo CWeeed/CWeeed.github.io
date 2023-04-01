@@ -556,16 +556,16 @@ const textNodes = [
     options: [
       {
         text: "Do work",
-        nextText: 50
+        nextText: 50,
       },
       {
         text: "Read a book",
         requiredState: (currentState) => currentState.booleBook,
-        nextText: 51
+        nextText: 51,
       },
       {
         text: "Stand up",
-        nextText: 12
+        nextText: 12,
       },
       ]
   },
@@ -983,22 +983,22 @@ const textNodes = [
       text: "Hooray!",
       nextText: 11,
     },
+    ]
+  },
+  {
+    id: 66, //Secret ending
+    text: "You got the secret ending, congratulations! You can play again, or leave a reply to let me know what you thought.\nThanks for playing!",
+    options: [
     {
-      id: 66, //Secret ending
-      text: "You got the secret ending, congratulations! You can play again, or leave a reply to let me know what you thought.\nThanks for playing!",
-      options: [
-      {
-        text: "Leave reply",
-        nextText: 64,
-      },
-      {
-        text: "Restart",
-        nextText: -1,
-      },
-      ]
+      text: "Leave reply",
+      nextText: 64,
+    },
+    {
+      text: "Restart",
+      nextText: -1,
     },
     ]
-  }
+  },
   ]
 
 startGame()
