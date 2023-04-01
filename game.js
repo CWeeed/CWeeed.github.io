@@ -985,7 +985,7 @@ const textNodes = [
     },
     {
       id: 66, //Secret ending
-      text: "You got the secret ending, congratulations! You can play again, or leave a reply to let me know what you thought.\nThanks for playing!"
+      text: "You got the secret ending, congratulations! You can play again, or leave a reply to let me know what you thought.\nThanks for playing!",
       options: [
       {
         text: "Leave reply",
@@ -993,9 +993,10 @@ const textNodes = [
       },
       {
         text: "Restart",
-        nextText: -1
-      }]
-    }
+        nextText: -1,
+      },
+      ]
+    },
     ]
   }
   ]
