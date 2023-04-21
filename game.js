@@ -967,7 +967,7 @@ const textNodes = [
   },
   {
     id: 64, //Leave a reply
-    text: "Thanks for sending feedback. You can go to t-h-e-reef.org/dhgame to leave a message. Have a good day!",
+    text: "Thanks for sending feedback. You can go to bit.ly/3Al44m8 to leave a message. Have a good day!",
     options: [
       {
       text: "Restart",
